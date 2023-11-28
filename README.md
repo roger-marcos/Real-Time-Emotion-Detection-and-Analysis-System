@@ -1,35 +1,53 @@
-# Real-Time Emotion Detection System
+# Real-Time Emotion Detection and Analysis System
 
-## Overview
-The Real-Time Emotion Detection System is an advanced machine learning project designed to detect and analyze human emotions from video streams. Utilizing image processing and deep learning, it identifies emotions in real-time, ideal for online meetings, therapy sessions, and educational environments.
+## Introduction
+The "Real-Time Emotion Detection and Analysis System" is a cutting-edge solution designed to identify and analyze human emotions in real time. Leveraging advanced machine learning and computer vision techniques, this system interprets facial expressions captured through a webcam and categorizes them into distinct emotion classes. It has potential applications in various fields, including human-computer interaction, psychological research, and user experience studies.
 
-## Features
-- **Emotion Detection**: Identifies emotions like happiness, sadness, anger, surprise, fear, and disgust.
-- **Real-Time Analysis**: Provides instant emotional insights from video streams.
-- **Versatile Applications**: Useful in digital communication, education, and mental health care.
+## Project Overview
+My system uses a pre-trained convolutional neural network (CNN) to classify facial expressions into seven primary emotions: Angry, Disgust, Fear, Happy, Neutral, Sad, and Surprise. The project includes scripts for real-time video processing, a Jupyter Notebook for model training and validation, and a demonstration notebook showcasing the system in action.
 
-## Installation
+### Key Components
+- **Emotion Detector**: A core component utilizing a CNN model to detect emotions from facial expressions.
+- **Video Processor**: A script that processes live video streams, integrating the emotion detection model to analyze and display detected emotions in real time.
+- **Utility Functions**: A set of helper functions for image processing and data visualization, enhancing the efficiency and scalability of the system.
+- **Model Training Notebook**: An interactive notebook that guides through training, validating, and saving the emotion detection model.
+- **Demo Notebook**: A demonstration of the system's capabilities in a live setting, utilizing a webcam feed for real-time emotion detection.
+
+## Installation and Usage
 
 ### Prerequisites
-- Python 3.8 or higher
-- Dependencies listed in `requirements.txt`
+- Python 3.6+
+- TensorFlow 2.x
+- OpenCV
+- Jupyter Notebook (for running notebooks)
 
-### Setup
-1. Clone the repository: ```git clone https://github.com/roger-marcos/real-time-emotion-detection.git```
-2. Install the required packages: ```pip install -r requirements.txt```
+### Installation
+Clone the repository and install the required dependencies:
+```bash
+git clone https://github.com/roger-marcos/Real-Time-Emotion-Detection-and-Analysis-System.git
+cd Real-Time-Emotion-Detection-and-Analysis-System
+pip install -r requirements.txt bash
+```
+### Running the Demo
+Launch the Demo.ipynb notebook in Jupyter to see the real-time emotion detection system in action. Ensure you have a functioning webcam for the live feed.
 
-## Usage
-To start the emotion detection system, run: ```python src/emotion_detector.py```
+### Training the Model
+Run the Model_Training.ipynb notebook for detailed steps on training and validating the emotion detection model. The notebook provides insights into the model architecture, training process, and performance metrics.
 
-## Contributing
-Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
+### Real-Time Video Processing
+Execute src/video_processor.py to process live video streams for emotion detection. This script utilizes the trained model and webcam feed to display detected emotions dynamically.
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+### Testing
+Unit tests for the emotion detector and video processor are available in the tests/ directory. These tests ensure the reliability and accuracy of key components.
 
-## Acknowledgments
-- Dataset providers
-- Contributors and supporters
+### Contributing
+Contributions are welcome! Please read through the CONTRIBUTING.md file for guidelines on how to contribute effectively to this project.
 
+### License
+This project is licensed under the MIT License. For more information, see the LICENSE.md file.
 
+### Credits and Acknowledgments
+· Dataset: [[Fer-2013](https://www.kaggle.com/datasets/msambare/fer2013)]<br>
+· OpenCV Library: Used for image processing and video handling<br>
+· TensorFlow: For building and training the CNN model
 
