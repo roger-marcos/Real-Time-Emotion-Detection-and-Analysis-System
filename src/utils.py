@@ -6,19 +6,17 @@ def resize_image(image, size=(48, 48)):
     """
     Resize an image to the given size.
     """
-    resized_image = cv2.resize(image, size)
-    return resized_image
+    return cv2.resize(image, size)
 
 def normalize_image(image):
     """
-    Normalize pixel values in the image.
+    Normalize pixel values in the image to be between 0 and 1.
     """
-    normalized_image = image / 255.0
-    return normalized_image
+    return image / 255.0
 
-def display_emotion_distribution(emotions, predictions):
+def plot_emotion_distribution(predictions, emotions):
     """
-    Display a bar chart showing the distribution of predicted emotions.
+    Plot a bar chart showing the distribution of predicted emotions.
     """
     plt.bar(emotions, predictions)
     plt.xlabel('Emotions')
@@ -30,5 +28,21 @@ def convert_to_grayscale(image):
     """
     Convert an image to grayscale.
     """
-    gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-    return gray_image
+    return cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
+def apply_clahe(image):
+    """
+    Apply CLAHE (Contrast Limited Adaptive Histogram Equalization) 
+    to improve image contrast.
+    """
+    clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8,8))
+    return clahe.apply(image)
+
+def display_image(image, title="Image"):
+    """
+    Display a single image.
+    """
+    plt.imshow(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
+    plt.title(title)
+    plt.axis('off')
+    plt.show()
