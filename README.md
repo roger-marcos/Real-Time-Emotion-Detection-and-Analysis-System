@@ -4,7 +4,7 @@
 The "Real-Time Emotion Detection and Analysis System" is a cutting-edge solution designed to identify and analyze human emotions in real time. Leveraging advanced machine learning and computer vision techniques, this system interprets facial expressions captured through a webcam and categorizes them into distinct emotion classes. It has potential applications in various fields, including human-computer interaction, psychological research, and user experience studies.
 
 ## Project Overview
-Our system uses a pre-trained convolutional neural network (CNN) to classify facial expressions into seven primary emotions: Angry, Disgust, Fear, Happy, Neutral, Sad, and Surprise. The project includes scripts for real-time video processing, a Jupyter Notebook for model training and validation, and a demonstration notebook showcasing the system in action.
+My system uses a pre-trained convolutional neural network (CNN) to classify facial expressions into seven primary emotions: Angry, Disgust, Fear, Happy, Neutral, Sad, and Surprise. The project includes scripts for real-time video processing, a Jupyter Notebook for model training and validation, and a demonstration notebook showcasing the system in action.
 
 ### Key Components
 - **Emotion Detector**: A core component utilizing a CNN model to detect emotions from facial expressions.
