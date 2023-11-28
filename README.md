@@ -24,7 +24,7 @@ My system uses a pre-trained convolutional neural network (CNN) to classify faci
 ### Installation
 Clone the repository and install the required dependencies:
 ```bash
-git clone https://github.com/your-username/Real-Time-Emotion-Detection-and-Analysis-System.git
+git clone https://github.com/roger-marcos/Real-Time-Emotion-Detection-and-Analysis-System.git
 cd Real-Time-Emotion-Detection-and-Analysis-System
 pip install -r requirements.txt bash
 ```
